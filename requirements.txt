@@ -1,0 +1,5 @@
+Flask==1.1.2
+PyMySQL==0.9.3
+mysql-connector==2.2.9
+cx-oracle==7.3.0
+uwsgi==2.0.18
