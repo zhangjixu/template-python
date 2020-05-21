@@ -8,12 +8,13 @@ class MySQLUtils(object):
     def __init__(self, user, password, host, port, database, pool_size=0):
         """
         建立连接池
-        :param user
-        :param password:
-        :param host:
-        :param port:
-        :param database:
-        :param pool_size: 如果为0，直接建立普通短连接；如果大于0，则建立长连接的连接池
+        Args:
+            user:
+            password:
+            host:
+            port:
+            database:
+            pool_size: 如果为0，直接建立普通短连接；如果大于0，则建立长连接的连接池
         """
         self._database = database
         self._host = host

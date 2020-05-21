@@ -7,11 +7,12 @@ class OracleUtils(object):
     def __init__(self, host, port, database, user, password):
         """
         建立连接
-        :param host:
-        :param port:
-        :param database:
-        :param user:
-        :param password:
+        Args:
+            host:
+            port:
+            database:
+            user:
+            password:
         """
         dsn = host + ':' + str(port) + '/' + database
         self._dsn = dsn
