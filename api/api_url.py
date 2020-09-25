@@ -1,6 +1,23 @@
 from api import app
-from flask import request
+from flask import request, url_for, redirect
 import json
+
+
+@app.route("/test")
+def test():
+    """
+    url_for操作对象是函数，而不是route里的路径。
+    Returns:
+
+    """
+    print("test")
+    return redirect(url_for("test_url", id=2))
+
+
+@app.route("/url/<id>")
+def test_url(id):
+    print(id)
+    return "success"
 
 
 @app.route("/get", methods=["GET"])
